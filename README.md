@@ -329,10 +329,3 @@ To extend this analysis framework:
 3. Include unit tests for new business logic
 4. Update this README with new features
 
-## License
-
-This project is provided as-is for educational and business analysis purposes.
-
----
-
-**Note**: This framework is designed to be easily maintained and extended for ongoing business intelligence needs. The modular architecture ensures that updates to data sources or metric calculations can be made without affecting the overall analysis structure.
