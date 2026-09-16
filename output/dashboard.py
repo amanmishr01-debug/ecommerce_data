@@ -10,6 +10,7 @@ selected in the filter).
 from __future__ import annotations
 
 import math
+import os
 
 import pandas as pd
 import plotly.graph_objects as go
@@ -19,7 +20,10 @@ import streamlit as st
 import data_loader as dl
 import business_metrics as bm
 
-DATA_PATH = "../ecommerce_data"
+# Resolved relative to this file, not the process's working directory, so
+# the app finds the data whether it's launched from this folder (locally)
+# or from the repo root (as most hosting platforms do).
+DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "ecommerce_data")
 
 # Chart colors, assigned by role and reused across every chart and card.
 PRIMARY_COLOR = "#2a78d6"
